@@ -2,6 +2,7 @@
 "  Basic and pretty much needed settings to provide a solid base for
 "  source code editting
 
+" set path
 set rtp^=~/.config/nvim/
 
 " don't make vim compatible with vi 
@@ -11,6 +12,9 @@ set nocompatible
 syntax on
 " and show line numbers
 set number
+
+" mousemode
+:set mouse=a
 
 " make vim try to detect file types and load plugins for them
 filetype on
