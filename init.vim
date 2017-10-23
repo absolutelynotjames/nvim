@@ -153,9 +153,6 @@ endif
 " select all mapping
 noremap <leader>a ggVG
 
-" Hide tilde
-highlight EndOfBuffer ctermfg=black ctermbg=black
-
 " ---------------------- PLUGIN CONFIGURATION ----------------------
 " initiate Vundle
 let &runtimepath.=',$HOME/.config/nvim/bundle/Vundle.vim'
@@ -197,10 +194,15 @@ let g:user_emmet_leader_key = '<c-e>'
 " this requires the jsHint2 plugin
 autocmd BufWritePost *.js silent :JSHint
 
-" set the color theme to wombat256
+" set the colorscheme
 colorscheme slate
 " make a mark for column 80
 set colorcolumn=80
 " and set the mark color to DarkSlateGray
 "
-highlight ColorColumn ctermbg=lightgray guibg=lightgray
+highlight ColorColumn ctermbg=darkgray guibg=darkgray
+
+" Hide tilde
+highlight EndOfBuffer ctermfg=black ctermbg=black
+
+
