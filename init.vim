@@ -76,15 +76,7 @@ exe 'ino <script> <C-V>' paste#paste_cmd['i']
 nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 
-" hide unnecessary gui in gVim
-if has("gui_running")
-    set guioptions-=m  " remove menu bar
-    set guioptions-=T  " remove toolbar
-    set guioptions-=r  " remove right-hand scroll bar
-    set guioptions-=L  " remove left-hand scroll bar
-end
-
-" set Adobe's Source Code Pro font as default
+" set Consolas font as default
 set guifont=Consolas:h11:cANSI
 
 " allow Tab and Shift+Tab to
@@ -120,9 +112,6 @@ set autoindent      " autoindent based on line above, works most of the time
 set smartindent     " smarter indent for C-like languages
 set shiftwidth=4    " when reading, tabs are 4 spaces
 set softtabstop=4   " in insert mode, tabs are 4 spaces
-
-" no lines longer than 80 cols
-set textwidth=80
 
 " use <C-Space> for Vim's keyword autocomplete
 "  ...in the terminal
@@ -200,10 +189,8 @@ autocmd BufWritePost *.js silent :JSHint
 
 " set the colorscheme
 colorscheme slate
-" make a mark for column 80
-set colorcolumn=80
-" and set the mark color to DarkSlateGray
-"
+
+" and set highlight color
 highlight ColorColumn ctermbg=darkgray guibg=darkgray
 
 " Hide tilde
