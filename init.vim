@@ -81,7 +81,7 @@ if has("gui_running")
 end
 
 " set Adobe's Source Code Pro font as default
-set guifont=Source\ Code\ Pro
+set guifont=Consolas:h11:cANSI
 
 " allow Tab and Shift+Tab to
 " tab  selection in visual mode
@@ -164,9 +164,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
-Plugin 'itchyny/lightline.vim'      
-Plugin 'Lokaltog/vim-easymotion'    
 Plugin 'tpope/vim-surround'         
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " -- Web Development
 Plugin 'Shutnik/jshint2.vim'        
 Plugin 'mattn/emmet-vim'            
