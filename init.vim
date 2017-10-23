@@ -181,7 +181,7 @@ noremap <leader>b :FufBuffer<cr>
 noremap <leader>f :FufFile<cr>
 
 " use zencoding with <C-E>
-let g:user_emmet_leader_key = '<c-e>'
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " run JSHint when a file with .js extension is saved
 " this requires the jsHint2 plugin
