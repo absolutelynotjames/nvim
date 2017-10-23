@@ -209,4 +209,8 @@ highlight ColorColumn ctermbg=darkgray guibg=darkgray
 " Hide tilde
 highlight EndOfBuffer ctermfg=black ctermbg=black
 
+" Airline theme
+let g:airline_theme="minimalist"
 
+" Airline fonts
+let g:airline_powerline_fonts = 1
