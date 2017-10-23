@@ -153,6 +153,9 @@ endif
 " select all mapping
 noremap <leader>a ggVG
 
+" Hide tilde
+:hi EndOfBuffer ctermfg=bg
+
 " ---------------------- PLUGIN CONFIGURATION ----------------------
 " initiate Vundle
 let &runtimepath.=',$HOME/.config/nvim/bundle/Vundle.vim'
