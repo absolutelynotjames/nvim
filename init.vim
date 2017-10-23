@@ -154,7 +154,7 @@ endif
 noremap <leader>a ggVG
 
 " Hide tilde
-:hi EndOfBuffer ctermfg=bg
+highlight EndOfBuffer ctermfg=black ctermbg=black
 
 " ---------------------- PLUGIN CONFIGURATION ----------------------
 " initiate Vundle
